@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            div {
+                background: #fff;
+                background: -moz-linear-gradient(top, #dedede 0%, #ffffff 100%);
+                background: -webkit-linear-gradient(
+                    top,
+                    #dedede 0%,
+                    #ffffff 100%
+                );
+                background: -webkit-gradient(
+                    linear,
+                    left top,
+                    left bottom,
+                    color-stop(0, #dedede),
+                    color-stop(1, #ffffff)
+                );
+                background: -o-linear-gradient(top, #dedede 0%, #ffffff 100%);
+                background: -ms-linear-gradient(top, #dedede 0%, #ffffff 100%);
+                background: linear-gradient(top, #dedede 0%, #ffffff 100%);
+                margin: 0 auto;
+                width: 200px;
+                padding: 40px;
+                text-align: center;
+                position: relative;
+                box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px;
+                border-radius: 10px;
+            }
+
+            div:after {
+                content: "";
+                position: absolute;
+                box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 2px;
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                bottom: -10px;
+                left: 50px;
+                border-width: 10px;
+                border-style: solid;
+                border-color: transparent #fff #fff transparent;
+            }
+        </style>
+    </head>
+    <body>
+        <div>hello world</div>
+    </body>
+</html>
